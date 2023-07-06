@@ -12,14 +12,14 @@ export const HttpStatusCode = {
 export const WHITELIST_DOMAINS = [
   'http://localhost:3000',
   'https://trello-trungquandev-web.web.app',
-  'https://deploy-netlify--duydien0902-clonetrello.netlify.app/'
+  'https://deploy-netlify--duydien0902-clonetrello.netlify.app'
 ]
 
 
 //default laf môi trường dev
 let websiteDomain = 'http://localhost:3000'
 if (env.BUILD_MODE === 'production') {
-  websiteDomain = 'https://deploy-netlify--duydien0902-clonetrello.netlify.app/' //sửa sau khi deploy và cps domain cải p[roduction
+  websiteDomain = 'https://deploy-netlify--duydien0902-clonetrello.netlify.app' //sửa sau khi deploy và cps domain cải p[roduction
 }
 
 export const WEBSITE_DOMAIN = websiteDomain
