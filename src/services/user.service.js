@@ -34,7 +34,7 @@ const createNew = async (reqBody) => {
     const getUser = await UserModel.findOneById(createdUser.insertedId.toString())
 
     // gửi email cho ngừoi dùng xác thực
-    const verificationLink = `${WEBSITE_DOMAIN}/account/verification`
+    const verificationLink = `${WEBSITE_DOMAIN}/account/verification?email=${getUser.email}&token=${getUser.verifyToken}`
     const subject = 'Trello Clone App: Please verify your email before using our services!'
     const htmlContent = `
     <h3>Here is your verification link:</h3>
