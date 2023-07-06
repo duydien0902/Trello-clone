@@ -11,7 +11,8 @@ export const HttpStatusCode = {
 
 export const WHITELIST_DOMAINS = [
   'http://localhost:3000',
-  'https://trello-trungquandev-web.web.app'
+  'https://trello-trungquandev-web.web.app',
+  'https://duydien0902-clonetrello.netlify.app'
 ]
 
 
