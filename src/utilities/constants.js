@@ -19,7 +19,7 @@ export const WHITELIST_DOMAINS = [
 //default laf môi trường dev
 let websiteDomain = 'http://localhost:3000'
 if (env.BUILD_MODE === 'production') {
-  websiteDomain = 'http:' //sửa sau khi deploy và cps domain cải p[roduction
+  websiteDomain = 'https://duydien0902-clonetrello.netlify.app' //sửa sau khi deploy và cps domain cải p[roduction
 }
 
 export const WEBSITE_DOMAIN = websiteDomain
